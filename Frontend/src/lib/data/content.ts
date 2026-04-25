@@ -309,7 +309,7 @@ export const companyInfo = {
   cr: "234352",
   taxId: "763-119-458",
   email: "info@insurtech-egypt.com",
-  phone: "+20 100 000 0000",
+  phone: "+20 102 878 7773",
 } as const;
 
 export const navLinks: { href: string; label: string }[] = [

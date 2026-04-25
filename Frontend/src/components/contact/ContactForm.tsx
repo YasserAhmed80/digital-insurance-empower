@@ -42,6 +42,7 @@ export function ContactForm() {
   const [errors, setErrors] = useState<Errors>({});
   const [submitting, setSubmitting] = useState<boolean>(false);
   const [success, setSuccess] = useState<boolean>(false);
+  const [serverError, setServerError] = useState<string | null>(null);
 
   function update(field: Field, value: string) {
     setValues((prev) => ({ ...prev, [field]: value }));
@@ -55,14 +56,28 @@ export function ContactForm() {
     if (Object.keys(next).length > 0) return;
 
     setSubmitting(true);
-    // UI-only: simulate latency, log payload. No backend wired.
-    await new Promise((r) => setTimeout(r, 700));
-    // eslint-disable-next-line no-console
-    console.log("[contact-form] submission", values);
-    setSubmitting(false);
-    setSuccess(true);
-    setValues(initial);
-    window.setTimeout(() => setSuccess(false), 5000);
+    setServerError(null);
+
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(values),
+      });
+      const data: { success: boolean; message: string } = await res.json();
+
+      if (!res.ok || !data.success) {
+        setServerError(data.message ?? "Something went wrong. Please try again.");
+      } else {
+        setSuccess(true);
+        setValues(initial);
+        window.setTimeout(() => setSuccess(false), 5000);
+      }
+    } catch {
+      setServerError("Network error. Please check your connection and try again.");
+    } finally {
+      setSubmitting(false);
+    }
   }
 
   return (
@@ -123,10 +138,19 @@ export function ContactForm() {
       {success ? (
         <div
           role="status"
-          className="flex items-center gap-3 rounded-xl border border-accent-400/30 bg-accent-500/10 p-4 text-sm text-accent-400"
+          className="flex items-center gap-3 rounded-xl border border-accent-500/30 bg-accent-50 p-4 text-sm text-accent-700"
         >
-          <CheckCircle2 className="h-5 w-5" aria-hidden="true" />
+          <CheckCircle2 className="h-5 w-5 shrink-0" aria-hidden="true" />
           Thanks! Your message has been received. We&apos;ll get back to you shortly.
+        </div>
+      ) : null}
+
+      {serverError ? (
+        <div
+          role="alert"
+          className="flex items-center gap-3 rounded-xl border border-danger-300 bg-danger-50 p-4 text-sm text-danger-700"
+        >
+          {serverError}
         </div>
       ) : null}
 
@@ -175,9 +199,9 @@ function Input({
 }: FieldProps & { type?: string; autoComplete?: string }) {
   return (
     <div>
-      <label htmlFor={id} className="mb-1.5 block text-sm font-medium text-ink-200">
+      <label htmlFor={id} className="mb-1.5 block text-sm font-medium text-ink-700">
         {label}
-        {required ? <span className="ml-1 text-accent-400">*</span> : null}
+        {required ? <span className="ml-1 text-danger-500">*</span> : null}
       </label>
       <div className="relative">
         <Icon
@@ -194,15 +218,15 @@ function Input({
           aria-invalid={Boolean(error)}
           aria-describedby={error ? `${id}-error` : undefined}
           className={cn(
-            "h-11 w-full rounded-xl border bg-white/[0.03] pl-10 pr-3 text-sm text-white placeholder:text-ink-400 transition-colors focus:outline-none focus:ring-2",
+            "h-11 w-full rounded-xl border bg-white pl-10 pr-3 text-sm text-ink-800 placeholder:text-ink-300 transition-colors focus:outline-none focus:ring-2",
             error
-              ? "border-red-400/50 focus:border-red-400 focus:ring-red-400/30"
-              : "border-white/10 focus:border-brand-400 focus:ring-brand-400/30",
+              ? "border-danger-300 focus:border-danger-400 focus:ring-danger-400/20"
+              : "border-ink-200 focus:border-brand-400 focus:ring-brand-400/20",
           )}
         />
       </div>
       {error ? (
-        <p id={`${id}-error`} className="mt-1.5 text-xs text-red-300">
+        <p id={`${id}-error`} className="mt-1.5 text-xs text-danger-500">
           {error}
         </p>
       ) : null}
@@ -221,9 +245,9 @@ function Textarea({
 }: FieldProps) {
   return (
     <div>
-      <label htmlFor={id} className="mb-1.5 block text-sm font-medium text-ink-200">
+      <label htmlFor={id} className="mb-1.5 block text-sm font-medium text-ink-700">
         {label}
-        {required ? <span className="ml-1 text-accent-400">*</span> : null}
+        {required ? <span className="ml-1 text-danger-500">*</span> : null}
       </label>
       <div className="relative">
         <Icon
@@ -239,15 +263,15 @@ function Textarea({
           aria-invalid={Boolean(error)}
           aria-describedby={error ? `${id}-error` : undefined}
           className={cn(
-            "w-full rounded-xl border bg-white/[0.03] py-3 pl-10 pr-3 text-sm text-white placeholder:text-ink-400 transition-colors focus:outline-none focus:ring-2",
+            "w-full rounded-xl border bg-white py-3 pl-10 pr-3 text-sm text-ink-800 placeholder:text-ink-300 transition-colors focus:outline-none focus:ring-2",
             error
-              ? "border-red-400/50 focus:border-red-400 focus:ring-red-400/30"
-              : "border-white/10 focus:border-brand-400 focus:ring-brand-400/30",
+              ? "border-danger-300 focus:border-danger-400 focus:ring-danger-400/20"
+              : "border-ink-200 focus:border-brand-400 focus:ring-brand-400/20",
           )}
         />
       </div>
       {error ? (
-        <p id={`${id}-error`} className="mt-1.5 text-xs text-red-300">
+        <p id={`${id}-error`} className="mt-1.5 text-xs text-danger-500">
           {error}
         </p>
       ) : null}
