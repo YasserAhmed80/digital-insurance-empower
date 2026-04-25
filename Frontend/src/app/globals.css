@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-bg: #ffffff;
+  --color-text: #1e293b;
+  --color-brand: #0066cc;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-inter), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: rgba(0, 102, 204, 0.15);
+  color: var(--color-brand);
+}
+
+@layer components {
+  .container-x {
+    @apply mx-auto w-full max-w-7xl px-5 sm:px-6 lg:px-8;
+  }
+
+  .section {
+    @apply relative py-20 sm:py-28;
+  }
+
+  .section-white {
+    @apply bg-white;
+  }
+
+  .section-gray {
+    @apply bg-ink-50;
+  }
+
+  .eyebrow {
+    @apply inline-flex items-center gap-2 rounded-full border border-brand-200 bg-brand-50 px-3 py-1 text-xs font-medium uppercase tracking-[0.18em] text-brand-700;
+  }
+
+  .heading-xl {
+    @apply font-display text-4xl font-bold leading-tight tracking-tight text-ink-900 sm:text-5xl lg:text-6xl;
+  }
+
+  .heading-lg {
+    @apply font-display text-3xl font-bold leading-tight tracking-tight text-ink-900 sm:text-4xl lg:text-5xl;
+  }
+
+  .heading-md {
+    @apply font-display text-2xl font-semibold tracking-tight text-ink-900 sm:text-3xl;
+  }
+
+  .text-muted {
+    @apply text-ink-500;
+  }
+
+  .card-surface {
+    @apply rounded-2xl border border-ink-100 bg-white p-6 shadow-card;
+  }
+
+  .gradient-divider {
+    @apply h-px w-full bg-gradient-to-r from-transparent via-ink-200 to-transparent;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
