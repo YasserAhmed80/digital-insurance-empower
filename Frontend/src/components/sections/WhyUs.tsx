@@ -40,9 +40,9 @@ export function WhyUs() {
               <StatCounter
                 value={stats.satisfaction}
                 suffix="%"
-                className="font-display text-6xl font-bold text-brand-500"
+                className="font-display text-6xl font-bold text-brand-700"
               />
-              <p className="mt-3 text-sm uppercase tracking-[0.2em] text-brand-500">
+              <p className="mt-3 text-sm uppercase tracking-[0.2em] text-brand-700">
                 Client satisfaction
               </p>
               <p className="mt-3 text-sm text-ink-500">

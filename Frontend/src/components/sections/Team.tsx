@@ -59,7 +59,7 @@ export function Team() {
           <div className="container-x grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {knowPillars.map((p) => (
               <div key={p.title} className="text-center">
-                <p className="font-display text-xl font-bold text-brand-500">{p.title}</p>
+                <p className="font-display text-xl font-bold text-brand-700">{p.title}</p>
               </div>
             ))}
           </div>

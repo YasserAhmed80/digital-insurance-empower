@@ -1,6 +1,5 @@
 import { About } from "@/components/sections/About";
 import { AISolutions } from "@/components/sections/AISolutions";
-import { Certifications } from "@/components/sections/Certifications";
 import { Expertise } from "@/components/sections/Expertise";
 import { FinalCTA } from "@/components/sections/FinalCTA";
 import { Hero } from "@/components/sections/Hero";
@@ -13,7 +12,6 @@ export default function HomePage() {
   return (
     <>
       <Hero />
-      <Certifications />
       <About />
       <SectionDivider />
       <Team />

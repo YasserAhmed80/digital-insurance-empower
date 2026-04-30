@@ -12,8 +12,9 @@ export function Footer() {
             <Image
               src="/main_logo_white.svg"
               alt={companyInfo.name}
-              width={220}
-              height={50}
+              width={348}
+              height={80}
+              className="h-20 w-auto"
             />
           </Link>
           <p className="mt-5 max-w-md text-sm leading-relaxed text-brand-200">

@@ -1,0 +1,115 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1128 191" width="1128" height="191">
+  <!--
+    LINKEDIN COMPANY PAGE BANNER - 1128 x 191px
+    Left 25% (x:0-282): empty safe zone for LinkedIn profile picture
+    Content zone: x:300-1110
+    No shield/logo | Values stacked vertically | Icon colors match value colors
+    Brand Primary: #003B73  Green: #00A859  Red: #E63946
+  -->
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"   stop-color="#001a3a"/>
+      <stop offset="55%"  stop-color="#003b73"/>
+      <stop offset="100%" stop-color="#004d99"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="70%" cy="50%" r="50%">
+      <stop offset="0%"   stop-color="#00A859" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#00A859" stop-opacity="0"/>
+    </radialGradient>
+    <clipPath id="bounds">
+      <rect width="1128" height="191"/>
+    </clipPath>
+    <style>.lf { font-family: 'Inter', 'Roboto', Arial, sans-serif; }</style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1128" height="191" fill="url(#bg)"/>
+
+  <!-- Diagonal grid texture -->
+  <g clip-path="url(#bounds)" opacity="0.04" stroke="white" stroke-width="0.8">
+    <line x1="-100" y1="0"   x2="300"  y2="191"/>
+    <line x1="100"  y1="0"   x2="500"  y2="191"/>
+    <line x1="300"  y1="0"   x2="700"  y2="191"/>
+    <line x1="500"  y1="0"   x2="900"  y2="191"/>
+    <line x1="700"  y1="0"   x2="1100" y2="191"/>
+  </g>
+
+  <!-- Subtle horizontal lines -->
+  <g clip-path="url(#bounds)" opacity="0.03" stroke="white" stroke-width="0.8">
+    <line x1="0" y1="64"  x2="1128" y2="64"/>
+    <line x1="0" y1="127" x2="1128" y2="127"/>
+  </g>
+
+  <!-- Accent glow in content area -->
+  <ellipse cx="820" cy="95" rx="280" ry="140" fill="url(#glow)" clip-path="url(#bounds)"/>
+
+  <!-- Green top bar -->
+  <rect x="0" y="0" width="1128" height="4" fill="#00A859"/>
+
+  <!-- ░░░ LEFT CONTENT BLOCK: Company name + stats (x:300-660) ░░░ -->
+
+  <!-- Company name -->
+  <text x="300" y="62" class="lf" font-size="50" font-weight="700"
+        fill="white" letter-spacing="-0.5">InsurTech-Egypt</text>
+
+  <!-- Sub tagline -->
+  <text x="302" y="80" class="lf" font-size="13" font-weight="400"
+        fill="rgba(255,255,255,0.55)" letter-spacing="1">Insurance Technology Solutions</text>
+
+  <!-- Divider under name -->
+  <line x1="300" y1="92" x2="665" y2="92" stroke="white" stroke-width="0.6" opacity="0.15"/>
+
+  <!-- Stat 1: Years -->
+  <text x="300" y="133" class="lf" font-size="36" font-weight="800" fill="white">23+</text>
+  <text x="300" y="155" class="lf" font-size="11" font-weight="500"
+        fill="rgba(255,255,255,0.5)" letter-spacing="1.2">YEARS EXP.</text>
+
+  <line x1="400" y1="108" x2="400" y2="162" stroke="white" stroke-width="0.6" opacity="0.15"/>
+
+  <!-- Stat 2: Projects -->
+  <text x="412" y="133" class="lf" font-size="36" font-weight="800" fill="white">100+</text>
+  <text x="412" y="155" class="lf" font-size="11" font-weight="500"
+        fill="rgba(255,255,255,0.5)" letter-spacing="1.2">PROJECTS</text>
+
+  <line x1="574" y1="108" x2="574" y2="162" stroke="white" stroke-width="0.6" opacity="0.15"/>
+
+  <!-- Stat 3: Core Apps -->
+  <text x="586" y="133" class="lf" font-size="36" font-weight="800" fill="white">20+</text>
+  <text x="586" y="155" class="lf" font-size="11" font-weight="500"
+        fill="rgba(255,255,255,0.5)" letter-spacing="1.2">CORE APPS</text>
+
+  <!-- Vertical divider between blocks -->
+  <line x1="870" y1="14" x2="870" y2="177" stroke="white" stroke-width="0.8" opacity="0.15"/>
+
+  <!-- ░░░ RIGHT BLOCK: Values stacked vertically (x:886-1110) ░░░ -->
+  <!-- Row separator lines -->
+  <line x1="886" y1="65"  x2="1110" y2="65"  stroke="white" stroke-width="0.5" opacity="0.10"/>
+  <line x1="886" y1="126" x2="1110" y2="126" stroke="white" stroke-width="0.5" opacity="0.10"/>
+
+  <!-- ── Row 1: BETTER | green #2EE87A | center y=32 ── -->
+  <circle cx="914" cy="32" r="22" fill="#2EE87A" opacity="0.15"/>
+  <circle cx="914" cy="32" r="16" fill="#2EE87A" opacity="0.20"/>
+  <polyline points="905,32 911,39 924,24"
+            fill="none" stroke="#2EE87A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="946" y="38" class="lf" font-size="20" font-weight="800" fill="#2EE87A" letter-spacing="2"
+        dominant-baseline="middle">BETTER</text>
+
+  <!-- ── Row 2: CHEAPER | orange #F4A261 | center y=95 ── -->
+  <circle cx="914" cy="95" r="22" fill="#F4A261" opacity="0.15"/>
+  <circle cx="914" cy="95" r="16" fill="#F4A261" opacity="0.20"/>
+  <text x="914" y="103" class="lf" font-size="21" font-weight="900"
+        fill="#F4A261" text-anchor="middle">$</text>
+  <text x="946" y="101" class="lf" font-size="20" font-weight="800" fill="#F4A261" letter-spacing="2"
+        dominant-baseline="middle">CHEAPER</text>
+
+  <!-- ── Row 3: FASTER | red #E63946 | center y=158 ── -->
+  <circle cx="914" cy="158" r="22" fill="#E63946" opacity="0.15"/>
+  <circle cx="914" cy="158" r="16" fill="#E63946" opacity="0.20"/>
+  <polygon points="920,144 908,162 914,162 909,173 922,156 916,156" fill="#E63946"/>
+  <text x="946" y="164" class="lf" font-size="20" font-weight="800" fill="#E63946" letter-spacing="2"
+        dominant-baseline="middle">FASTER</text>
+
+  <!-- Green bottom bar -->
+  <rect x="0" y="187" width="1128" height="4" fill="#00A859"/>
+
+</svg>

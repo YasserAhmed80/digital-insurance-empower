@@ -8,12 +8,6 @@ export function Certifications() {
   return (
     <section aria-label="Team certifications" className="border-y border-ink-100 bg-ink-50 py-12 sm:py-14">
       <div className="container-x">
-        <Reveal>
-          <p className="mb-8 text-center text-xs font-semibold uppercase tracking-[0.2em] text-ink-400">
-            Certified Expertise Across Insurance &amp; Technology
-          </p>
-        </Reveal>
-
         <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-6">
           {certifications.map((cert, i) => (
             <Reveal key={cert.title} delay={i * 0.06}>

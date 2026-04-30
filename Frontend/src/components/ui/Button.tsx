@@ -3,7 +3,7 @@ import type { ComponentPropsWithoutRef, ReactNode } from "react";
 import { cn } from "@/lib/cn";
 
 type Variant = "primary" | "secondary" | "ghost";
-type Size = "md" | "lg";
+type Size = "sm" | "md" | "lg";
 
 const lightVariants: Record<Variant, string> = {
   primary:
@@ -24,6 +24,7 @@ const darkVariants: Record<Variant, string> = {
 };
 
 const sizes: Record<Size, string> = {
+  sm: "h-8 px-4 text-xs",
   md: "h-10 px-5 text-sm",
   lg: "h-12 px-7 text-base",
 };

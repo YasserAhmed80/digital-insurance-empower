@@ -35,18 +35,11 @@
         >InsurTech-Egypt</text>
 
   <!-- Values: BETTER=light-blue  CHEAPER=Red  FASTER=light-green — bold, same font, centred under name -->
-  <text x="240" y="64" class="lf" font-size="12" font-weight="700" letter-spacing="2" text-anchor="middle">
-    <tspan fill="#7BB8FF" font-weight="700">BETTER</tspan>
-    <tspan fill="rgba(255,255,255,0.4)" font-weight="700">  ·  </tspan>
-    <tspan fill="#E63946" font-weight="700">CHEAPER</tspan>
-    <tspan fill="rgba(255,255,255,0.4)" font-weight="700">  ·  </tspan>
-    <tspan fill="#2EE87A" font-weight="700">FASTER</tspan>
+  <text x="240" y="76" class="lf" font-size="14" font-weight="700" letter-spacing="2" text-anchor="middle">
+    <tspan fill="#2EE87A" font-weight="800">BETTER</tspan>
+    <tspan fill="rgba(255,255,255,0.75)" font-weight="700">  ·  </tspan>
+    <tspan fill="#F4A261" font-weight="800">CHEAPER</tspan>
+    <tspan fill="rgba(255,255,255,0.75)" font-weight="700">  ·  </tspan>
+    <tspan fill="#E63946" font-weight="800">FASTER</tspan>
   </text>
-
-  <!-- Thin rule -->
-  <line x1="98" y1="72" x2="492" y2="72" stroke="white" stroke-width="0.7" opacity="0.15"/>
-
-  <!-- Tagline: bold, white (same as name on dark bg) -->
-  <text x="100" y="90" class="lf" font-size="10.5" font-weight="700"
-        fill="white" letter-spacing="1">Insurance Technology Partner</text>
 </svg>

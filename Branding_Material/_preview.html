@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>InsurTech-Egypt — Branding Asset Preview</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: Inter, system-ui, sans-serif; background: #f1f5f9; color: #1e293b; }
+    header { background: #003b73; color: white; padding: 24px 40px; }
+    header h1 { font-size: 1.25rem; font-weight: 700; letter-spacing: 0.05em; }
+    header p  { font-size: 0.8rem; opacity: 0.65; margin-top: 4px; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 24px; padding: 32px 40px; }
+    .card { background: white; border-radius: 16px; border: 1px solid #e2e8f0; overflow: hidden; box-shadow: 0 1px 4px rgba(0,0,0,.06); }
+    .card-label { padding: 14px 20px 10px; border-bottom: 1px solid #f1f5f9; }
+    .card-label strong { font-size: 0.85rem; font-weight: 600; color: #334155; }
+    .card-label span  { display: block; font-size: 0.7rem; color: #94a3b8; margin-top: 2px; }
+    .preview { display: flex; align-items: center; justify-content: center; padding: 32px 20px; min-height: 160px; }
+    .preview.dark  { background: #003b73; }
+    .preview.gray  { background: #f8fafc; }
+    .preview.white { background: #ffffff; }
+    .preview img   { max-width: 100%; height: auto; }
+    .preview svg   { max-width: 100%; height: auto; }
+    .badge { display: inline-block; margin-top: 8px; font-size: 0.65rem; font-weight: 600;
+             letter-spacing: 0.06em; padding: 2px 8px; border-radius: 999px; }
+    .badge.light { background: #e6f2ff; color: #003b73; }
+    .badge.dark  { background: rgba(255,255,255,.15); color: white; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>InsurTech-Egypt — Branding Asset Preview</h1>
+    <p>All logo variants &amp; brand assets</p>
+  </header>
+  <div class="grid">
+
+    <!-- Main Logo (Light) -->
+    <div class="card">
+      <div class="card-label">
+        <strong>Main Logo — Light Background</strong>
+        <span>main_logo.svg · 500 × 115 · Use on white / light surfaces</span>
+      </div>
+      <div class="preview white">
+        <img src="Logos/main_logo.svg" alt="Main Logo Light" width="420" />
+      </div>
+    </div>
+
+    <!-- Main Logo (Dark) -->
+    <div class="card">
+      <div class="card-label">
+        <strong>Main Logo — Dark Background</strong>
+        <span>main_logo_white.svg · 500 × 115 · Use on brand-700 / dark surfaces</span>
+      </div>
+      <div class="preview dark">
+        <img src="Logos/main_logo_white.svg" alt="Main Logo Dark" width="420" />
+      </div>
+    </div>
+
+    <!-- Stacked Logo -->
+    <div class="card">
+      <div class="card-label">
+        <strong>Stacked / Portrait Logo</strong>
+        <span>stacked_logo.svg · 240 × 250 · Documents, print, square contexts</span>
+      </div>
+      <div class="preview white">
+        <img src="Logos/stacked_logo.svg" alt="Stacked Logo" width="200" />
+      </div>
+    </div>
+
+    <!-- Brand Icon -->
+    <div class="card">
+      <div class="card-label">
+        <strong>Brand Icon / Shield Mark</strong>
+        <span>brand_icon.svg · 100 × 100 · App icons, small contexts</span>
+      </div>
+      <div class="preview gray">
+        <img src="Logos/brand_icon.svg" alt="Brand Icon" width="120" />
+      </div>
+    </div>
+
+    <!-- ITE Monogram -->
+    <div class="card">
+      <div class="card-label">
+        <strong>ITE Monogram / Badge</strong>
+        <span>ite_monogram.svg · 200 × 200 · LinkedIn profile pic, app store icon</span>
+      </div>
+      <div class="preview dark">
+        <img src="Logos/ite_monogram.svg" alt="ITE Monogram" width="160" />
+      </div>
+    </div>
+
+    <!-- Favicon -->
+    <div class="card">
+      <div class="card-label">
+        <strong>Favicon</strong>
+        <span>favicon.svg · 32 × 32 · Browser tab icon</span>
+      </div>
+      <div class="preview gray">
+        <!-- Show at 32px (native) and enlarged -->
+        <div style="display:flex;align-items:center;gap:32px;">
+          <div style="text-align:center;">
+            <img src="Logos/favicon.svg" alt="Favicon native" width="32" height="32" />
+            <p style="font-size:10px;color:#94a3b8;margin-top:6px;">32 × 32 (native)</p>
+          </div>
+          <div style="text-align:center;">
+            <img src="Logos/favicon.svg" alt="Favicon enlarged" width="96" height="96" />
+            <p style="font-size:10px;color:#94a3b8;margin-top:6px;">3× enlarged</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- LinkedIn Banner — full width card -->
+  <div style="grid-column: 1 / -1;" class="card">
+    <div class="card-label">
+      <strong>LinkedIn Banner</strong>
+      <span>linkedin_banner.svg · 1584 × 396 · LinkedIn company page header</span>
+    </div>
+    <div class="preview dark" style="padding: 16px;">
+      <img src="Social_Media/linkedin_banner.svg" alt="LinkedIn Banner" style="width:100%;max-width:900px;height:auto;" />
+    </div>
+  </div>
+
+  <!-- Logo Image Square -->
+  <div class="card">
+    <div class="card-label">
+      <strong>Square Logo Image — 800×800</strong>
+      <span>logo_image_800.svg · Email signatures, partnerships, app store</span>
+    </div>
+    <div class="preview dark">
+      <img src="Social_Media/logo_image_800.svg" alt="Square Logo 800" width="280" />
+    </div>
+  </div>
+
+  <!-- Color Palette -->
+  <section style="padding: 0 40px 40px;">
+    <h2 style="font-size:.85rem;font-weight:700;letter-spacing:.08em;color:#64748b;text-transform:uppercase;margin-bottom:16px;">Brand Color Palette</h2>
+    <div style="display:flex;flex-wrap:wrap;gap:12px;">
+      <div style="border-radius:12px;overflow:hidden;width:140px;box-shadow:0 1px 4px rgba(0,0,0,.08);">
+        <div style="background:#003b73;height:64px;"></div>
+        <div style="background:white;padding:10px 12px;">
+          <p style="font-size:.8rem;font-weight:700;">#003B73</p>
+          <p style="font-size:.7rem;color:#64748b;">Trust Blue (Primary)</p>
+        </div>
+      </div>
+      <div style="border-radius:12px;overflow:hidden;width:140px;box-shadow:0 1px 4px rgba(0,0,0,.08);">
+        <div style="background:#00A859;height:64px;"></div>
+        <div style="background:white;padding:10px 12px;">
+          <p style="font-size:.8rem;font-weight:700;">#00A859</p>
+          <p style="font-size:.7rem;color:#64748b;">Efficiency Green</p>
+        </div>
+      </div>
+      <div style="border-radius:12px;overflow:hidden;width:140px;box-shadow:0 1px 4px rgba(0,0,0,.08);">
+        <div style="background:#E63946;height:64px;"></div>
+        <div style="background:white;padding:10px 12px;">
+          <p style="font-size:.8rem;font-weight:700;">#E63946</p>
+          <p style="font-size:.7rem;color:#64748b;">Speed Red (Accent)</p>
+        </div>
+      </div>
+      <div style="border-radius:12px;overflow:hidden;width:140px;box-shadow:0 1px 4px rgba(0,0,0,.08);">
+        <div style="background:#F4A261;height:64px;"></div>
+        <div style="background:white;padding:10px 12px;">
+          <p style="font-size:.8rem;font-weight:700;">#F4A261</p>
+          <p style="font-size:.7rem;color:#64748b;">Value Yellow (Accent)</p>
+        </div>
+      </div>
+      <div style="border-radius:12px;overflow:hidden;width:140px;box-shadow:0 1px 4px rgba(0,0,0,.08);">
+        <div style="background:#0066cc;height:64px;"></div>
+        <div style="background:white;padding:10px 12px;">
+          <p style="font-size:.8rem;font-weight:700;">#0066cc</p>
+          <p style="font-size:.7rem;color:#64748b;">Web Blue (brand-500)</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

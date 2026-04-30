@@ -1,0 +1,123 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 627" width="1200" height="627">
+  <!--
+    LINKEDIN LAUNCH ANNOUNCEMENT POST - 1200 x 627px
+    InsurTech-Egypt | Company launch celebration
+  -->
+  <defs>
+    <!-- Deep navy background -->
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"   stop-color="#001228"/>
+      <stop offset="60%"  stop-color="#002a5c"/>
+      <stop offset="100%" stop-color="#003b73"/>
+    </linearGradient>
+    <!-- Green glow behind headline -->
+    <radialGradient id="glow" cx="50%" cy="48%" r="40%">
+      <stop offset="0%"   stop-color="#00A859" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#00A859" stop-opacity="0"/>
+    </radialGradient>
+    <!-- Warm centre glow -->
+    <radialGradient id="glow2" cx="50%" cy="50%" r="50%">
+      <stop offset="0%"   stop-color="#ffffff" stop-opacity="0.04"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+    <clipPath id="bounds">
+      <rect width="1200" height="627"/>
+    </clipPath>
+    <style>.lf { font-family: 'Inter', 'Roboto', Arial, sans-serif; }</style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="627" fill="url(#bg)"/>
+  <rect width="1200" height="627" fill="url(#glow2)"/>
+
+  <!-- Subtle diagonal grid -->
+  <g clip-path="url(#bounds)" opacity="0.03" stroke="white" stroke-width="1">
+    <line x1="-200" y1="0"   x2="600"  y2="627"/>
+    <line x1="0"    y1="0"   x2="800"  y2="627"/>
+    <line x1="200"  y1="0"   x2="1000" y2="627"/>
+    <line x1="400"  y1="0"   x2="1200" y2="627"/>
+    <line x1="600"  y1="0"   x2="1400" y2="627"/>
+    <line x1="800"  y1="0"   x2="1600" y2="627"/>
+  </g>
+
+  <!-- Green glow behind centre text -->
+  <ellipse cx="600" cy="300" rx="420" ry="220" fill="url(#glow)" clip-path="url(#bounds)"/>
+
+  <!-- Confetti dots — scattered celebratory particles -->
+  <!-- Green cluster top-left -->
+  <circle cx="80"  cy="90"  r="5" fill="#00A859" opacity="0.7"/>
+  <circle cx="130" cy="55"  r="3" fill="#00A859" opacity="0.5"/>
+  <circle cx="60"  cy="140" r="4" fill="#2EE87A" opacity="0.6"/>
+  <circle cx="180" cy="80"  r="6" fill="#00A859" opacity="0.4"/>
+  <circle cx="110" cy="170" r="3" fill="#2EE87A" opacity="0.5"/>
+  <!-- Red/yellow cluster top-right -->
+  <circle cx="1090" cy="70"  r="5" fill="#E63946" opacity="0.7"/>
+  <circle cx="1140" cy="110" r="3" fill="#F4A261" opacity="0.6"/>
+  <circle cx="1060" cy="130" r="4" fill="#E63946" opacity="0.5"/>
+  <circle cx="1170" cy="55"  r="6" fill="#F4A261" opacity="0.4"/>
+  <circle cx="1110" cy="160" r="3" fill="#E63946" opacity="0.5"/>
+  <!-- Blue/white scatter mid -->
+  <circle cx="200"  cy="500" r="4" fill="white"   opacity="0.18"/>
+  <circle cx="140"  cy="560" r="3" fill="#7BB8FF" opacity="0.4"/>
+  <circle cx="1020" cy="520" r="4" fill="white"   opacity="0.18"/>
+  <circle cx="1080" cy="570" r="3" fill="#7BB8FF" opacity="0.4"/>
+  <!-- Extra scatter -->
+  <circle cx="310"  cy="100" r="3" fill="#F4A261" opacity="0.5"/>
+  <circle cx="880"  cy="90"  r="4" fill="#2EE87A" opacity="0.5"/>
+  <circle cx="950"  cy="540" r="3" fill="#F4A261" opacity="0.4"/>
+  <circle cx="260"  cy="530" r="4" fill="#2EE87A" opacity="0.4"/>
+
+  <!-- Small star shapes (4-point) -->
+  <path d="M370,80 L374,90 L384,90 L376,97 L379,108 L370,102 L361,108 L364,97 L356,90 L366,90 Z"
+        fill="#F4A261" opacity="0.55" transform="scale(0.55) translate(300,60)"/>
+  <path d="M370,80 L374,90 L384,90 L376,97 L379,108 L370,102 L361,108 L364,97 L356,90 L366,90 Z"
+        fill="#2EE87A" opacity="0.55" transform="translate(840,50) scale(0.45)"/>
+  <path d="M370,80 L374,90 L384,90 L376,97 L379,108 L370,102 L361,108 L364,97 L356,90 L366,90 Z"
+        fill="white"   opacity="0.30" transform="translate(100,400) scale(0.4)"/>
+  <path d="M370,80 L374,90 L384,90 L376,97 L379,108 L370,102 L361,108 L364,97 L356,90 L366,90 Z"
+        fill="#7BB8FF" opacity="0.40" transform="translate(1050,400) scale(0.4)"/>
+
+  <!-- Green top accent bar -->
+  <rect x="0" y="0" width="1200" height="5" fill="#00A859"/>
+  <!-- Green bottom accent bar -->
+  <rect x="0" y="622" width="1200" height="5" fill="#00A859"/>
+
+  <!-- ── CENTRE CONTENT ── -->
+
+  <!-- Thin top rule -->
+  <line x1="340" y1="192" x2="860" y2="192" stroke="white" stroke-width="0.7" opacity="0.15"/>
+
+  <!-- Company name — large headline -->
+  <text x="600" y="295" class="lf" font-size="88" font-weight="800"
+        fill="white" text-anchor="middle" letter-spacing="-1">InsurTech-Egypt</text>
+
+  <!-- Thin bottom rule -->
+  <line x1="260" y1="320" x2="940" y2="320" stroke="white" stroke-width="0.7" opacity="0.15"/>
+
+  <!-- Tagline -->
+  <text x="600" y="368" class="lf" font-size="22" font-weight="400"
+        fill="rgba(255,255,255,0.70)" text-anchor="middle" letter-spacing="1">
+    Transforming Insurance Through Technology
+  </text>
+
+  <!-- Values row — centered -->
+  <text x="600" y="440" class="lf" font-size="20" font-weight="800" text-anchor="middle" letter-spacing="3">
+    <tspan fill="#2EE87A">BETTER</tspan>
+    <tspan fill="rgba(255,255,255,0.30)" font-weight="300" dx="6"> · </tspan>
+    <tspan fill="#F4A261" dx="6">CHEAPER</tspan>
+    <tspan fill="rgba(255,255,255,0.30)" font-weight="300" dx="6"> · </tspan>
+    <tspan fill="#E63946" dx="6">FASTER</tspan>
+  </text>
+
+  <!-- Divider -->
+  <line x1="440" y1="462" x2="760" y2="462" stroke="white" stroke-width="0.6" opacity="0.12"/>
+
+  <!-- Website / CTA -->
+  <text x="600" y="510" class="lf" font-size="16" font-weight="500"
+        fill="rgba(255,255,255,0.50)" text-anchor="middle" letter-spacing="2">
+    www.insurtech-egypt.com
+  </text>
+
+
+
+</svg>

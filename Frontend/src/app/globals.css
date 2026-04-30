@@ -5,7 +5,7 @@
 :root {
   --color-bg: #ffffff;
   --color-text: #1e293b;
-  --color-brand: #0066cc;
+  --color-brand: #003b73; /* Trust Blue — brand primary */
 }
 
 html {
@@ -22,7 +22,7 @@ body {
 }
 
 ::selection {
-  background: rgba(0, 102, 204, 0.15);
+  background: rgba(0, 59, 115, 0.15);
   color: var(--color-brand);
 }
 

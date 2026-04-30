@@ -21,7 +21,7 @@ export function Header() {
       <div className="container-x flex h-16 items-center justify-between sm:h-20">
         <Link
           href="/"
-          className="group flex items-center"
+          className="group flex h-full items-center"
           aria-label={`${companyInfo.name} home`}
         >
           {/* Mobile: icon only */}
@@ -33,14 +33,14 @@ export function Header() {
             priority
             className="block sm:hidden"
           />
-          {/* Desktop: full horizontal logo */}
+          {/* Desktop: full horizontal logo — fills header height */}
           <Image
             src="/main_logo_white.svg"
             alt={companyInfo.name}
-            width={200}
-            height={46}
+            width={348}
+            height={80}
             priority
-            className="hidden sm:block"
+            className="hidden sm:block h-full w-auto"
           />
         </Link>
 

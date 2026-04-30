@@ -29,7 +29,7 @@ export function About() {
             <article className="card-surface h-full">
               <div className="flex items-center gap-3">
                 <IconTile icon={Lightbulb} color="brand" />
-                <h3 className="heading-md text-xl">Industry Experience</h3>
+                <h3 className="heading-md">Industry Experience</h3>
               </div>
               <p className="mt-4 leading-relaxed text-ink-500">
                 With over <strong className="text-ink-800">23 years</strong> of
@@ -44,7 +44,7 @@ export function About() {
             <article className="card-surface h-full">
               <div className="flex items-center gap-3">
                 <IconTile icon={ShieldCheck} color="accent" />
-                <h3 className="heading-md text-xl">Our Strengths</h3>
+                <h3 className="heading-md">Our Strengths</h3>
               </div>
               <ul className="mt-4 space-y-3">
                 {strengths.map((s) => (
@@ -89,7 +89,7 @@ function Stat({
       <StatCounter
         value={value}
         suffix={suffix}
-        className="font-display text-4xl font-bold text-brand-500 sm:text-5xl"
+        className="font-display text-4xl font-bold text-brand-700 sm:text-5xl"
       />
       <p className="mt-2 text-sm uppercase tracking-widest text-ink-500">
         {label}

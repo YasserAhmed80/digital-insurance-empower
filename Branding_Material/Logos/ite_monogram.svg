@@ -64,12 +64,12 @@
   <text x="100" y="175" class="lf" font-size="14" font-weight="700"
         fill="white" text-anchor="middle" letter-spacing="0.3">InsurTech-Egypt</text>
 
-  <!-- Values: BETTER=light-blue  CHEAPER=Red  FASTER=light-green — bold, directly under name -->
-  <text x="100" y="190" class="lf" font-size="9" font-weight="700" text-anchor="middle" letter-spacing="2">
-    <tspan fill="#7BB8FF" font-weight="700">BETTER</tspan>
-    <tspan fill="rgba(255,255,255,0.4)" font-weight="700"> · </tspan>
-    <tspan fill="#E63946" font-weight="700">CHEAPER</tspan>
-    <tspan fill="rgba(255,255,255,0.4)" font-weight="700"> · </tspan>
-    <tspan fill="#2EE87A" font-weight="700">FASTER</tspan>
+  <!-- Values: BETTER=Green  CHEAPER=Yellow  FASTER=Red — bold, directly under name -->
+  <text x="100" y="192" class="lf" font-size="10.5" font-weight="700" text-anchor="middle" letter-spacing="1.5">
+    <tspan fill="#2EE87A" font-weight="800">BETTER</tspan>
+    <tspan fill="rgba(255,255,255,0.75)" font-weight="700"> · </tspan>
+    <tspan fill="#F4A261" font-weight="800">CHEAPER</tspan>
+    <tspan fill="rgba(255,255,255,0.75)" font-weight="700"> · </tspan>
+    <tspan fill="#E63946" font-weight="800">FASTER</tspan>
   </text>
 </svg>
